@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Dictionary dict = new Dictionary("words.txt");
+        Dictionary dict = new Dictionary("food.txt");
         Hangman hangman = new Hangman(dict.getRandomWord(), 8);
         
         System.out.println("welcome to hangman! you get " + hangman.chances + " chances to guess the word");
