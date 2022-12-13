@@ -6,7 +6,7 @@ public class Hangman {
 
     public Hangman(String word, int chances) {
         this.word = word;
-        this.chances = 5;
+        this.chances = chances;
     }
 
     public String guess(String letter) {
