@@ -7,10 +7,11 @@ public class Dictionary {
     ArrayList<String> words;
     Random rand;
 
-    public Dictionary() {
+    public Dictionary(String fileName) {
         rand = new Random();
-        File file = new File("food.txt");
+        File file = new File(fileName);
         words = new ArrayList<String>();
+        
         try {
             Scanner scan = new Scanner(file);
             while (scan.hasNextLine()) {
@@ -22,7 +23,7 @@ public class Dictionary {
         }
     }
 
-    public String getWord() {
+    public String getRandomWord() {
         int random = rand.nextInt(words.size());
         return words.get(random);
     }
