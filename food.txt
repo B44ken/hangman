@@ -11,6 +11,7 @@ burrito
 butter
 cake
 candy
+chikki
 caramel
 caviar
 cheese
